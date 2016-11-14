@@ -1,0 +1,28 @@
+{
+  "name": "mab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weather-app/wa-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-body": "^4.2.0",
+    "crypto": "0.0.3",
+    "forever-monitor": "^1.7.0",
+    "koa": "^1.2.4",
+    "koa-jwt": "^1.2.0",
+    "koa-router": "^5.4.0",
+    "koa-static": "^2.0.0",
+    "path": "^0.12.7",
+    "pg": "^6.1.0",
+    "sequelize": "^3.24.6"
+  }
+}
