@@ -4,15 +4,14 @@ var fs = require('fs'),
     Sequelize = require('sequelize'),
     sequelize = new Sequelize(config.database.database, config.database.user, config.database.password, {
         host: config.database.server,
-        dialect: 'postgres',
-        define: {
-            timestamps: false
-        },
+        dialect: config.database.dialect,
         dialectOptions: {
             encrypt: true
         }
     }),
     db = {};
+
+console.log(config.database.database);
 
 fs.readdirSync(__dirname).filter(function(file) {
     return (file.indexOf('.') !== 0) && (file !== 'index.js');

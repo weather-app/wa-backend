@@ -17,20 +17,21 @@ app.use(jwt({secret: cfg.token.secret}));
 
 router.createRoutes(app, 'locked');
 
-
-
 if (!module.parent) {
 
     co(function * () {
 
         try {
             yield models.sequelize.authenticate();
-            models.sequelize.sync();
+            yield models.sequelize.sync();
+
+
             db.syncData();
         } catch (e) {
             console.log(e);
             return;
         }
+
         app.listen(3000);
         console.log('server is running');
     });

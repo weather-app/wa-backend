@@ -1,9 +1,10 @@
 var cfg = {
     'database': {
-        server: 'westeurope.cloudapp.azure.com',
-        user: 'postgres',
-        password: 'xxxxxx',
-        database: 'xxxxxx',
+        database: 'D:\\github\\weather\\wa-backend\\data\\db2.sqlite3',
+        dialect: 'sqlite',
+        server: '',
+        user: '',
+        password: '',
         options: {
             encrypt: true
         }
