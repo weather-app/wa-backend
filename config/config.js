@@ -1,12 +1,12 @@
 var cfg = {
     'database': {
-        database: 'D:\\github\\weather\\wa-backend\\data\\db2.sqlite3',
-        dialect: 'sqlite',
+        database: null,
         server: '',
-        user: '',
-        password: '',
+        user: null,
+        password: null,
         options: {
-            encrypt: true
+            storage: __dirname + '/../data/db.sqlite3',
+            dialect: 'sqlite'
         }
     },
     token: {
